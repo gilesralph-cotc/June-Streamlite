@@ -20,9 +20,9 @@ if prompt := st.chat_input("What is up?"):
 def response_generator():
     response = random.choice(
         [
-            "Hello there! How can I assist you today?",
-            "Hi, human! Is there anything I can help you with?",
-            "Do you need help?",
+            "HHave you considered an alternative, a nice stick of celery?",
+            "I don'tthink yuu need a donut!!",
+            "NO!!",
         ]
     )
     for word in response.split():
