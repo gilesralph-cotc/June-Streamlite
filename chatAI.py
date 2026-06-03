@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import time
-st.title("Simple chat")
+st.title("Irish Pub Friend")
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -18,13 +18,9 @@ if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
   # Streamed response emulator
 def response_generator():
-    response = random.choice(
-        [
-            "Have you considered an alternative, a nice stick of celery?",
-            "I don't think you need a donut!!",
-            "NO!!",
-        ]
-    )
+    response = ai_ask("Pretend you are a very friendly and helpful person.  Please provide a response given the provided context.  Please provide the response only with no before or after commentary.",
+                      data=st.session_state.messages,
+                      api_key=st.secrets["UDIVMUXms6rSZCO2eYR4xC6axHFk4EQy"]
     for word in response.split():
         yield word + " "
         time.sleep(0.05)
