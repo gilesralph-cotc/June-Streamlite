@@ -21,7 +21,7 @@ def response_generator():
     response = random.choice(
         [
             "HHave you considered an alternative, a nice stick of celery?",
-            "I don'tthink yuu need a donut!!",
+            "I don't think you need a donut!!",
             "NO!!",
         ]
     )
