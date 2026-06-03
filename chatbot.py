@@ -20,7 +20,7 @@ if prompt := st.chat_input("What is up?"):
 def response_generator():
     response = random.choice(
         [
-            "HHave you considered an alternative, a nice stick of celery?",
+            "Have you considered an alternative, a nice stick of celery?",
             "I don't think you need a donut!!",
             "NO!!",
         ]
